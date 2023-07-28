@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/**** 
+Header, Nav
+**************/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  margin: 0;
+  height: 7em;
+  background: #282828;
+  color: #fff;
+}
+
+
+.mainTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.mainTitle h1 {
+  font-size: 2em;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 1%;
+}
+
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navBar li {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.navBar li a {
+  color: #fff;
+}
+
+/**** 
+Section Layouts
+***********/
+.welcomeSection,
+.experienceSection,
+.contactSection,
+.projectsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  background: #282828;
+  color: #f8f6f6;
+}
+
+
+/** Welcome *******/
+.welcomeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2%;
+  flex-basis: 60%;
+  margin: 1% 0.5%;
+}
+
+.welcomeTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.welcomeTitle h1 {
+  font-size: 5em;
+  font-weight: 300;
+}
+
+.welcomeText p {
+  font-size: 1.5em;
+  line-height: 1.7;
+}
+
+.welcomeContent {
+  font-size: 0.8em;
+  width: 80%;
+}
+
+/** Experience *******/
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+  padding: 1%;
+  width: auto;
+}
+
+.sectionTitle {
+  font-size: 2em;
+  padding: 1%;
+}
+
+.sectionTitle h1 {
+  font-weight: 300;
+}
+
+.sectionUl {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionUl ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-position: inside;
+  font-size: 1.2em;
+  flex-grow: 1;
+}
+
+.sectionUl ul li {
+  line-height: 1.8;
+}
+
+.skillsIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.skillsIcons {
+  padding: 0.5%;
+  border-top: 1% solid #f8f6f6;
+}
+
+
+/** Portfolio *******/
+.portfolioList {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 2% 1%;
+  padding: 1%;
+  border: 1px solid #f8f6f6;
+}
+
+.projectTitle {
+  margin: 2% 0;
+}
+
+.projectCard h1 {
+  font-size: 3em;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.projectDescription {
+  line-height: 1.5;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.projectUrls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5em;
+  margin: 2% 0.5%;
+  height: 2.5em;
+}
+
+.projectDescriptionUrl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 20%;
+  margin: 1% 0;
+  text-align: center;
+  border: 0.5px solid #557ff1;
+}
+
+.projectDescriptionUrl:hover {
+  background: #557ff1;
+}
+
+.projectDescriptionUrl a {
+  color: #f8f6f6;
+  font-size: 0.75em;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/** Contact *******/
+.contactSectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+  padding: 1%;
+  width: 50%;
+}
+
+.contactTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5%;
+  margin: 1%;
+}
+
+.contactTitle h1 {
+  font-weight: 300;
+  font-size: 3em;
+  border-bottom: 1% solid #f8f6f6;
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: 80%;
+  margin: 2%;
+}
+
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 1%;
+}
+
+.contactCard a {
+  align-self: center;
+  text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mainTitle {
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 45%;
+  }
+
+  .navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .welcomeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2% 0;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    padding: 0.5%;
+  }
+
+  .sectionTitle {
+    font-size: 2em;
+    align-self: baseline;
+    padding: 1%;
+  }
+
+  .sectionUl,
+  .skillsIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0.5%;
+  }
+
+  .skillsIcons {
+    border-top: 1% solid #f8f6f6;
+    padding: 0.5%;
+  }
+
+  .sectionUl ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding: 1%;
+    margin: 2%;
+    list-style-position: inside;
+    font-size: 1.2em;
+  }
+
+  .sectionUl ul li {
+    line-height: 1.8;
+  }
+
+  .portfolioList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contactTitle h1 {
+    font-weight: 300;
+    font-size: 4em;
+    border-bottom: 1% solid #f8f6f6;
+  }
+
+}
