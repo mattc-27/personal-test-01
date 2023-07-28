@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineMail, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
-import './App.css';
+import '../App.css';
 
 export default function Contact() {
 

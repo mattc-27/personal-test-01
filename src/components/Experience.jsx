@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiNodejsSmall, DiReact, DiPython, DiPostgresql } from 'react-icons/di';
 import { SiExpress } from 'react-icons/si';
-import './App.css';
+import '../App.css';
 
 export default function Experience() {
 
